@@ -50,7 +50,7 @@ mysqli_stmt_close($stmt);
             <?php if (empty($cars)): ?>
                 <div class="empty-message">
                     <p>You haven't listed any cars yet.</p>
-                    <a href="addCar.php" class="btn btn-primary" style="margin-top: 15px; display: inline-block;">Add Your First Car</a>
+                    <a href="addCar.php" class="btn btn-primary btn-dark" style="margin-top: 15px; display: inline-block;">Add Your First Car</a>
                 </div>
             <?php else: ?>
 

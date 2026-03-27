@@ -10,8 +10,10 @@ $user_name = $_SESSION['user_name'];
 ?>
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard | Dream Drive</title>
     <link rel="stylesheet" href="/car/style.css">
 </head>
@@ -27,7 +29,7 @@ $user_name = $_SESSION['user_name'];
                 <div class="dashboard-card">
                     <h3>My Bookings</h3>
                     <p>View your rental history</p>
-                    <a href="" class="btn">View Bookings</a>
+                    <a href="../customer/customerBookings.php" class="btn">View Bookings</a>
                 </div>
                 <div class="dashboard-card">
                     <h3>Browse Cars</h3>
@@ -52,7 +54,7 @@ $user_name = $_SESSION['user_name'];
                 <div class="dashboard-card">
                     <h3>View Bookings</h3>
                     <p>See who rented your cars</p>
-                    <a href="" class="btn">View Bookings</a>
+                    <a href="../agency/agencyBookings.php" class="btn">View Bookings</a>
                 </div>
             </div>
         <?php endif; ?>
