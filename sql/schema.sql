@@ -24,7 +24,7 @@ CREATE TABLE IF NOT EXISTS agencies (
     phone VARCHAR(20) NOT NULL,
     address TEXT,
     registration_number VARCHAR(50) UNIQUE NOT NULL,  
-    approved BOOLEAN DEFAULT FALSE,  -- admin approval required
+    approved BOOLEAN DEFAULT TRUE,  
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 );

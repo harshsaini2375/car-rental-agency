@@ -757,3 +757,370 @@ footer {
 .error-message p {
     margin: 5px 0;
 }
+
+
+/* dashboard */
+
+.dashboard-container {
+    padding: 40px 0;
+    min-height: 53vh;
+}
+
+.dashboard-container h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #1e1e2f;
+}
+
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+.dashboard-card {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s, box-shadow 0.2s;
+    border: 1px solid #eeeae2;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+    color: #1e1e2f;
+}
+
+.dashboard-card p {
+    color: #5a5a70;
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+}
+
+.dashboard-card .btn {
+    background-color: #e6b422;
+    color: #1e1e2f;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 40px;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 500;
+    transition: background 0.2s;
+}
+
+.dashboard-card .btn:hover {
+    background-color: #cf9f1a;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .dashboard-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .dashboard-card {
+        padding: 20px;
+    }
+}
+
+
+/* add car page */
+
+/* Add Car Page */
+.add-car-page {
+    padding: 50px 0;
+    background: #f9f7f3;
+}
+
+.form-card {
+    background: white;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 35px 40px;
+    border-radius: 24px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05);
+}
+
+.form-card h2 {
+    font-size: 1.8rem;
+    margin-bottom: 8px;
+    color: #1e1e2f;
+}
+
+.form-card > p {
+    color: #5a5a70;
+    margin-bottom: 25px;
+    border-left: 3px solid #e6b422;
+    padding-left: 12px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.full-width {
+    grid-column: span 2;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 6px;
+    color: #1e1e2f;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd8ce;
+    border-radius: 40px;
+    font-size: 0.95rem;
+    transition: border 0.2s;
+    background: white;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #e6b422;
+    box-shadow: 0 0 0 2px rgba(230, 180, 34, 0.1);
+}
+
+.form-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.btn-outline {
+    background: transparent;
+    border: 2px solid #e6b422;
+    color: #1e1e2f;
+    padding: 10px 24px;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+.btn-outline:hover {
+    background: #e6b422;
+    color: #1e1e2f;
+}
+
+
+@media (max-width: 768px) {
+    .form-card {
+        padding: 25px;
+    }
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+    .full-width {
+        grid-column: span 1;
+    }
+    .form-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .form-buttons .btn,
+    .form-buttons .btn-outline {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* mycars list for agency page */
+
+/* My Cars Page */
+.my-cars-page {
+    padding: 50px 0;
+    background: #f9f7f3;
+    min-height: 60vh;
+}
+
+.cars-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.cars-header h1 {
+    margin: 0;
+    color: #1e1e2f;
+}
+
+.add-car-btn {
+    background: #e6b422;
+    color: #1e1e2f;
+    padding: 8px 20px;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.2s;
+}
+
+.add-car-btn:hover {
+    background: #cf9f1a;
+}
+
+.cars-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 25px;
+}
+
+.car-card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.car-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.car-image {
+    background: #2c2c3a;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #e6b422;
+    font-size: 3rem;
+}
+
+.car-info {
+    padding: 20px;
+}
+
+.car-model {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin: 0 0 10px;
+    color: #1e1e2f;
+}
+
+.car-details {
+    font-size: 0.9rem;
+    color: #5a5a70;
+    margin-bottom: 15px;
+}
+
+.car-details p {
+    margin: 6px 0;
+}
+
+.car-price {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #e6b422;
+    margin: 15px 0;
+}
+
+.car-status {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.status-available {
+    background: #e8f5e9;
+    color: #2e7d32;
+}
+
+.status-rented {
+    background: #fff3e0;
+    color: #e65100;
+}
+
+.status-maintenance {
+    background: #ffebee;
+    color: #c62828;
+}
+
+.car-actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.btn-sm {
+    padding: 6px 16px;
+    font-size: 0.85rem;
+    border-radius: 30px;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+}
+
+.btn-edit {
+    background: #f0f0f0;
+    color: #1e1e2f;
+}
+
+.btn-delete {
+    background: #ffebee;
+    color: #c62828;
+}
+
+.btn-edit:hover {
+    background: #e0e0e0;
+}
+
+.btn-delete:hover {
+    background: #ffcdd2;
+}
+
+.empty-message {
+    text-align: center;
+    padding: 60px;
+    background: white;
+    border-radius: 20px;
+    color: #5a5a70;
+}
+
+@media (max-width: 768px) {
+    .cars-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    .cars-grid {
+        grid-template-columns: 1fr;
+    }
+}
